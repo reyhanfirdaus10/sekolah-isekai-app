@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Sekolah Isekai App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi Sekolah Isekai adalah aplikasi berbasis React yang digunakan untuk menampilkan data siswa di sebuah sekolah isekai. Aplikasi ini menerapkan beberapa aturan unik, di mana siswa-siswa di kelas tertentu dapat mengalami kematian dan pernikahan berdasarkan nilai ujian mereka.
 
-## Available Scripts
+## Penggunaan
 
-In the project directory, you can run:
+Untuk menggunakan aplikasi Sekolah Isekai, Anda perlu mengikuti langkah-langkah berikut:
 
-### `npm start`
+1. Pastikan Anda telah menginstall [Node.js](https://nodejs.org/) pada komputer Anda.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Clone repository ini ke komputer Anda dengan menjalankan perintah berikut pada terminal atau command prompt:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Gantilah `<nama-akun-github>` dengan nama akun GitHub Anda.
 
-### `npm test`
+3. Masuk ke direktori proyek:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Instal dependencies yang diperlukan dengan menjalankan perintah:
 
-### `npm run build`
+5. Jalankan aplikasi dengan perintah:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Aplikasi akan berjalan di `http://localhost:3000`. Buka browser dan akses URL tersebut untuk melihat aplikasi Sekolah Isekai.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Cara Penggunaan
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Setelah aplikasi berjalan, Anda akan melihat daftar siswa dalam setiap kelas beserta nilai ujian mereka. Aplikasi ini akan secara otomatis menghitung dan menampilkan siswa-siswa yang akan mati di bulan ini atau tahun depan berdasarkan nilai ujian mereka. Selain itu, aplikasi juga akan menampilkan siswa-siswa yang akan menikah pada tahun depan jika mereka berada di Kelas 10F dan memiliki nilai yang habis dibagi 7.
 
-### `npm run eject`
+Anda dapat melihat keterangan untuk setiap siswa, termasuk kelas, nama, nilai ujian, bulan kematian, dan tahun kematian (jika ada). Jika siswa tersebut berada di Kelas 10F dan akan menikah, akan ada informasi bahwa siswa tersebut akan menikah pada tahun depan.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Kontribusi
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Jika Anda menemukan masalah atau ingin berkontribusi pada proyek ini, Anda dapat membuka _issue_ atau mengirimkan _pull request_ pada repository GitHub ini.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Lisensi
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Proyek ini menggunakan lisensi [MIT](LICENSE). Anda dapat memodifikasi dan mendistribusikan kode ini sesuai dengan ketentuan lisensi yang berlaku.

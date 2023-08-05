@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./App.css";
 
 function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
+    document.title = "Sekolah Isekai";
     const fetchData = async () => {
       try {
         const response = await axios.get("http://ecocim-backend-theone.beit.co.id/api/ManualConfig/TestBEIT");
@@ -70,16 +72,20 @@ function App() {
 
   return (
     <div>
-      <h1>Data Detail Kelas</h1>
+      <h1>Sekolah Isekai</h1>
       {Object.entries(data).map(([namaKelas, infoKelas]) => (
-        <div key={namaKelas}>
-          <h2>{namaKelas}</h2>
-          <p>Jumlah Siswa: {infoKelas.siswa.length}</p>
+        <div key={namaKelas} className="class-container">
+          <h2 className="class-name">{namaKelas}</h2>
+          <p className="num-students">Jumlah Siswa: {infoKelas.siswa.length}</p>
           <h3>Data Siswa</h3>
-          <ul>
+          <ul className="data-list">
             {infoKelas.siswa.map((siswa, index) => (
-              <li key={index}>
-                {siswa.nama}: {siswa.nilai} ({siswa.mati.bulan} {siswa.mati.tahun}){siswa.menikah && `, Menikah pada tahun ${siswa.menikah}`}
+              <li key={index} className="student-item">
+                <span className="student-name">{siswa.nama}:</span> {siswa.nilai} (
+                <a className="link-style">
+                  Mati pada Bulan {siswa.mati.bulan} {siswa.mati.tahun}
+                </a>
+                ){siswa.menikah && <span className="year-text">, Menikah pada tahun {siswa.menikah}</span>}
               </li>
             ))}
           </ul>
