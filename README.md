@@ -9,14 +9,18 @@ Untuk menggunakan aplikasi Sekolah Isekai, Anda perlu mengikuti langkah-langkah 
 1. Pastikan Anda telah menginstall [Node.js](https://nodejs.org/) pada komputer Anda.
 
 2. Clone repository ini ke komputer Anda dengan menjalankan perintah berikut pada terminal atau command prompt:
+   git clone https://github.com/<nama-akun-github>/sekolah-isekai-app.git
 
 Gantilah `<nama-akun-github>` dengan nama akun GitHub Anda.
 
 3. Masuk ke direktori proyek:
+   cd sekolah-isekai-app
 
 4. Instal dependencies yang diperlukan dengan menjalankan perintah:
+   npm install
 
 5. Jalankan aplikasi dengan perintah:
+   npm start
 
 Aplikasi akan berjalan di `http://localhost:3000`. Buka browser dan akses URL tersebut untuk melihat aplikasi Sekolah Isekai.
 
