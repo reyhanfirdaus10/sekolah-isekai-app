@@ -20,10 +20,10 @@ git clone https://github.com/reyhanfirdaus10/sekolah-isekai-app.git
 cd sekolah-isekai-app
 ```
 
-4. Instal dependencies yang diperlukan dengan menjalankan perintah:
+4. Pasang modul axios untuk melakukan HTTP request ke [API](http://ecocim-backend-theone.beit.co.id/api/ManualConfig/TestBEIT) dengan menjalankan perintah:
 
 ```
-npm install
+npm install axios
 ```
 
 5. Jalankan aplikasi dengan perintah:
